@@ -140,6 +140,12 @@ public class ViewExclucaoCarro extends javax.swing.JFrame {
         txtID.setText(txtID.getText().replaceAll("[^0-9]", ""));
     }//GEN-LAST:event_txtIDKeyReleased
 
+     public void limparTela(){
+        txtID.setText("");
+        
+        txtPlaca.setText("");
+        
+    }
     /**
      * @param args the command line arguments
      */

@@ -138,6 +138,7 @@ public class ViewExclusaoPessoa extends javax.swing.JFrame {
         int valor = Integer.parseInt(txtID.getText());
         dao.remove(new Cliente(textCPF.getText(), valor));
         JOptionPane.showMessageDialog(null, "Exclusão com sucesso");
+        limparTela();
 
     }//GEN-LAST:event_botaoExclusaoActionPerformed
 
@@ -145,6 +146,12 @@ public class ViewExclusaoPessoa extends javax.swing.JFrame {
         txtID.setText(txtID.getText().replaceAll("[^0-9]", ""));
     }//GEN-LAST:event_txtIDKeyReleased
 
+    public void limparTela(){
+        txtID.setText("");
+        
+        textCPF.setText("");
+        
+    }
     /**
      * @param args the command line arguments
      */

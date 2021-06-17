@@ -44,7 +44,6 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="alugaCarro" max="32767" attributes="0"/>
                           <Component id="mostraCarroAlugado" pref="151" max="32767" attributes="0"/>
-                          <Component id="botaoTodasLocacoes" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -75,7 +74,6 @@
               </Group>
               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="botaoTodasLocacoes" pref="43" max="32767" attributes="0"/>
                   <Component id="excluiCarro" pref="43" max="32767" attributes="0"/>
                   <Component id="excluiPessoa" max="32767" attributes="0"/>
               </Group>
@@ -178,14 +176,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fecharJanelaActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="botaoTodasLocacoes">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Todas loca&#xe7;&#xf5;es"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoTodasLocacoesActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

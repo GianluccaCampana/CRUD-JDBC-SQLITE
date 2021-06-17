@@ -20,6 +20,12 @@ public class Cliente {
         this.CPF = CPF;
         this.id = id;
     }
+    
+     public Cliente() {
+       // select
+        
+      
+    }
 
     public Cliente(String primeiroNome, String ultimoNome, String CPF, String nomeRua, String numCasa, String complemento, String CEP, String bairro, String cidade, int id) {
         //para atualização
@@ -58,9 +64,7 @@ public class Cliente {
         this.CPF = CPF;
     }
 
-    public Cliente() {
-     
-    }
+   
     
     public Cliente(int id){
         // para exclusao

@@ -176,7 +176,7 @@
           <StringArray count="3">
             <StringItem index="0" value="&lt; Selecione a disponibilidade &gt;"/>
             <StringItem index="1" value="SIM"/>
-            <StringItem index="2" value="N&#xc3;O"/>
+            <StringItem index="2" value="NAO"/>
           </StringArray>
         </Property>
       </Properties>

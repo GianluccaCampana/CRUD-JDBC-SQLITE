@@ -65,13 +65,12 @@ public class ConnectionFactory {
                     + ")");
             s.execute("CREATE TABLE IF NOT EXISTS LOCACAO ("
                     + "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "
-                    + "idCarro INTEGER NOT NULL, "
-                    + "idCliente INTEGER NOT NULL, "
+                    + "idCarro INTEGER UNIQUE NOT NULL, "
+                    + "CPF TEXT NOT NULL, "
                     + "dataLocacao TEXT NOT NULL, "
-                    + "dataDevolucao TEXT NOT NULL, "
-                    + "vlLocacao INTEGER NOT NULL, "
+                    + "dataDevolucao TEXT NOT NULL, "                    
                     + "FOREIGN KEY (idCarro) REFERENCES CARRO (id), "
-                    + "FOREIGN KEY (idCliente) REFERENCES CLIENTE (id) "
+                    + "FOREIGN KEY (CPF) REFERENCES CLIENTE (CPF) "
                     + ")");
         } catch (Exception ex) {
             throw new Exception("Erro na criacao do banco de dados\n" + ex.getMessage());

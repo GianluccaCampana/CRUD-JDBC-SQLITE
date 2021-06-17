@@ -90,7 +90,7 @@ public class ViewCadastroCarro extends javax.swing.JFrame {
 
         jLabel6.setText("Diaponibilidade: ");
 
-        comboDisp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "< Selecione a disponibilidade >", "SIM", "NÃO" }));
+        comboDisp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "< Selecione a disponibilidade >", "SIM", "NAO" }));
 
         jLabel7.setText("Valor (R$): ");
 
@@ -182,6 +182,7 @@ public class ViewCadastroCarro extends javax.swing.JFrame {
                     comboDisp.getSelectedItem().toString(), txtValor.getText()));
         }
                     JOptionPane.showMessageDialog(null, "Cadastrado com sucesso!");
+                    limparTela();
 
     }//GEN-LAST:event_botaoCadastrarActionPerformed
 
@@ -189,6 +190,14 @@ public class ViewCadastroCarro extends javax.swing.JFrame {
         txtValor.setText(txtValor.getText().replaceAll("[^0-9,]",""));
     }//GEN-LAST:event_txtValorKeyReleased
 
+     public void limparTela(){
+        
+        txtMarca.setText("");
+        txtModelo.setText("");
+        txtPlaca.setText("");
+        txtChassi.setText("");
+        txtValor.setText("");
+    }
     /**
      * @param args the command line arguments
      */

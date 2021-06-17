@@ -32,15 +32,16 @@ public class ClienteDAO {
 
         try {
             String sql = "SELECT * FROM CLIENTE";
+           
             PreparedStatement stmt = this.connection.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
+
             List<Cliente> clientes = new ArrayList<Cliente>();
 
-//            stmt.setString(1, c.getPrimeiroNome());
-//            stmt.setString(2, c.getUltimoNome());
-//            stmt.setString(3, c.getCPF());
+
             while (rs.next()) {
 // criando o objeto Contato
+               
                 Cliente cliente = new Cliente();
                 cliente.setId(rs.getInt("id"));
                 cliente.setPrimeiroNome(rs.getString("primeiro_nome"));
@@ -106,7 +107,7 @@ public class ClienteDAO {
             stmt.setString(8, cliente.getBairro());
             stmt.setString(9, cliente.getCidade());
             stmt.setInt(10, cliente.getId());
-            
+
             stmt.execute();
             stmt.close();
         } catch (SQLException e) {

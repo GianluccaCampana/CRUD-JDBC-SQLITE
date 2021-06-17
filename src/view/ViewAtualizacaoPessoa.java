@@ -322,6 +322,7 @@ public class ViewAtualizacaoPessoa extends javax.swing.JFrame {
                 txtNomeRua.getText().toLowerCase(), txtNumCasa.getText(), txtComplemento.getText().toLowerCase(), txtCEP.getText(),
                 txtBairro.getText().toLowerCase(), txtCidade.getText().toLowerCase(), valor));
         JOptionPane.showMessageDialog(null, "atualizado com sucesso!");
+        limparTela();
 
 
     }//GEN-LAST:event_botaoAtualizarActionPerformed
@@ -334,6 +335,18 @@ public class ViewAtualizacaoPessoa extends javax.swing.JFrame {
         txtID.setText(txtID.getText().replaceAll("[^0-9]", ""));
     }//GEN-LAST:event_txtIDKeyReleased
 
+    public void limparTela(){
+        txtID.setText("");
+        textNomeCadastro.setText("");
+        textUltimoNome.setText("");
+        textCPF.setText("");
+        txtNomeRua.setText("");
+        txtNumCasa.setText("");
+        txtComplemento.setText("");
+        txtCEP.setText("");
+        txtBairro.setText("");
+        txtCidade.setText("");
+    }
     /**
      * @param args the command line arguments
      */

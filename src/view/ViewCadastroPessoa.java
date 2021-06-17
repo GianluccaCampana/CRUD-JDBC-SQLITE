@@ -273,6 +273,7 @@ public class ViewCadastroPessoa extends javax.swing.JFrame {
                     txtNomeRua.getText().toLowerCase(), txtNumCasa.getText(), txtComplemento.getText().toLowerCase(), txtCEP.getText(),
                     txtBairro.getText().toLowerCase(), txtCidade.getText().toLowerCase()));
             JOptionPane.showMessageDialog(null, "Inserido com sucesso!");
+            limparTela();
 
         }
     }//GEN-LAST:event_botaoCadastroActionPerformed
@@ -309,6 +310,18 @@ public class ViewCadastroPessoa extends javax.swing.JFrame {
        txtComplemento.setText(txtComplemento.getText().replaceAll("[^a-zA-Z]", ""));
     }//GEN-LAST:event_txtComplementoKeyReleased
 
+    public void limparTela(){
+        
+        textNomeCadastro.setText("");
+        textUltimoNome.setText("");
+        textCPF.setText("");
+        txtNomeRua.setText("");
+        txtNumCasa.setText("");
+        txtComplemento.setText("");
+        txtCEP.setText("");
+        txtBairro.setText("");
+        txtCidade.setText("");
+    }
     /**
      * @param args the command line arguments
      */

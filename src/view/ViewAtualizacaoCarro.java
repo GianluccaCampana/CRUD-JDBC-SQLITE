@@ -215,16 +215,26 @@ public class ViewAtualizacaoCarro extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int valor =Integer.parseInt(txtID.getText());
-        dao.altera(new Carro(valor,txtMarca.getText().toLowerCase(), txtModelo.getText().toLowerCase(), txtPlaca.getText().toLowerCase(), txtChassi.getText().toLowerCase(), comboDisp.getSelectedItem().toString()
+        dao.altera(new Carro(valor,txtMarca.getText().toLowerCase(), txtModelo.getText().toLowerCase(), txtPlaca.getText().toLowerCase(), txtChassi.getText().toLowerCase(), 
+                comboDisp.getSelectedItem().toString()
                 , txtValor.getText()));
         
                     JOptionPane.showMessageDialog(null, "Atualizado com sucesso!");
+                    limparTela();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtIDKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIDKeyReleased
         txtID.setText(txtID.getText().replaceAll("[^0-9]", ""));
     }//GEN-LAST:event_txtIDKeyReleased
 
+    public void limparTela(){
+        txtID.setText("");
+        txtMarca.setText("");
+        txtModelo.setText("");
+        txtPlaca.setText("");
+        txtChassi.setText("");
+        txtValor.setText("");
+    }
     /**
      * @param args the command line arguments
      */

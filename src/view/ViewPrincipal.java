@@ -51,7 +51,6 @@ public class ViewPrincipal extends javax.swing.JFrame {
         alugaCarro = new javax.swing.JButton();
         mostraCarroAlugado = new javax.swing.JButton();
         fecharJanela = new javax.swing.JButton();
-        botaoTodasLocacoes = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -132,13 +131,6 @@ public class ViewPrincipal extends javax.swing.JFrame {
             }
         });
 
-        botaoTodasLocacoes.setText("Todas locações");
-        botaoTodasLocacoes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoTodasLocacoesActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -161,8 +153,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
                         .addGap(114, 114, 114)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(alugaCarro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(mostraCarroAlugado, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-                            .addComponent(botaoTodasLocacoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(mostraCarroAlugado, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(82, 82, 82)
                         .addComponent(fecharJanela, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -184,10 +175,8 @@ public class ViewPrincipal extends javax.swing.JFrame {
                     .addComponent(atualizaPessoa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(botaoTodasLocacoes, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(excluiCarro, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                        .addComponent(excluiPessoa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(excluiCarro, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                    .addComponent(excluiPessoa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(mostraCarros, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
@@ -254,11 +243,6 @@ public class ViewPrincipal extends javax.swing.JFrame {
         mostraAlugados.setVisible(true);
     }//GEN-LAST:event_mostraCarroAlugadoActionPerformed
 
-    private void botaoTodasLocacoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoTodasLocacoesActionPerformed
-        ViewTodasLocacoes todasLocacoes = new ViewTodasLocacoes();
-        todasLocacoes.setVisible(true);
-    }//GEN-LAST:event_botaoTodasLocacoesActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -267,7 +251,6 @@ public class ViewPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton alugaCarro;
     private javax.swing.JButton atualizaCarro;
     private javax.swing.JButton atualizaPessoa;
-    private javax.swing.JButton botaoTodasLocacoes;
     private javax.swing.JButton cadastroCarro;
     private javax.swing.JButton cadastroPessoa;
     private javax.swing.JButton excluiCarro;
