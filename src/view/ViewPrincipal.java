@@ -117,7 +117,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
             }
         });
 
-        mostraCarroAlugado.setText("Carros disponíveis");
+        mostraCarroAlugado.setText("Todas locações");
         mostraCarroAlugado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mostraCarroAlugadoActionPerformed(evt);
